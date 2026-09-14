@@ -1,0 +1,474 @@
+/* --- Typography Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* --- Theme Variables --- */
+:root {
+    --bg-color: #FFF5F7;         /* Very light pink background */
+    --card-bg: #FFFFFF;          /* Pure white for cards */
+    
+    --primary-pink: #D81B60;     /* Vibrant pink for headings/buttons */
+    --accent-pink: #F48FB1;      /* Soft pink for borders/hover */
+    --glow-pink: rgba(216, 27, 96, 0.15); /* Glow effect for photo */
+    
+    --text-dark: #2C2C2C;        /* Dark grey for strong contrast */
+    --text-body: #5A5A5A;        /* Softer grey for paragraphs */
+    --text-muted: #8A8A8A;       /* Muted grey for labels */
+    
+    --font-primary: 'Poppins', sans-serif;
+}
+
+/* --- Global Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-primary);
+    color: var(--text-body);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: transparent;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-pink);
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--primary-pink);
+}
+
+/* Active tab underline effect */
+.nav-links a.active {
+    position: relative;
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-pink);
+    border-radius: 2px;
+}
+
+/* --- Main Container --- */
+.main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 60px 80px 60px;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 100px;
+}
+
+/* Image Area */
+.hero-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.photo-glow {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    padding: 8px;
+    background: linear-gradient(135deg, #FFD1DC, var(--primary-pink));
+    box-shadow: 0 0 40px var(--glow-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.availability-badge {
+    background-color: #FFFFFF;
+    color: var(--primary-pink);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid var(--accent-pink);
+    box-shadow: 0 4px 15px rgba(216, 27, 96, 0.05);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Text Area */
+.hero-text {
+    flex: 1;
+}
+
+.greeting {
+    font-family: 'Georgia', serif; /* Using a serif font for the greeting as in the image */
+    font-style: italic;
+    color: var(--primary-pink);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.full-name {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--primary-pink);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin-bottom: 15px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--primary-pink);
+    margin-bottom: 20px;
+}
+
+.bio {
+    font-size: 1rem;
+    color: var(--text-body);
+    margin-bottom: 35px;
+    max-width: 600px;
+}
+
+.bio strong {
+    color: var(--primary-pink);
+    font-weight: 600;
+}
+
+/* Buttons */
+.cta-group {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary-pink);
+    color: #FFFFFF;
+    border: 2px solid var(--primary-pink);
+    box-shadow: 0 6px 20px rgba(216, 27, 96, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #C2185B;
+    border-color: #C2185B;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(216, 27, 96, 0.4);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-pink);
+    border: 2px solid var(--accent-pink);
+}
+
+.btn-secondary:hover {
+    border-color: var(--primary-pink);
+    background-color: rgba(216, 27, 96, 0.05);
+    transform: translateY(-2px);
+}
+
+.btn-icon {
+    font-size: 1.1rem;
+}
+
+.arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-secondary:hover .arrow {
+    transform: translateX(4px);
+}
+
+/* --- "A little about me" Section (Visual Block Version) --- */
+.about-card-section {
+    margin-bottom: 80px;
+}
+
+.about-card {
+    background-color: var(--card-bg);
+    border-radius: 24px;
+    padding: 50px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.03);
+}
+
+.about-header {
+    margin-bottom: 45px;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--primary-pink);
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.title-underline {
+    width: 50px;
+    height: 4px;
+    background-color: var(--primary-pink);
+    border-radius: 2px;
+}
+
+/* The new visual grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Individual Visual Blocks */
+.visual-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent; /* Keeps layout stable on hover */
+}
+
+/* Hover Effect for the whole block */
+.visual-block:hover {
+    background-color: #FCFAFA;
+    border-color: #F0E6E8;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(216, 27, 96, 0.06);
+}
+
+/* Large Icon Container with Soft Pink Background */
+.icon-container {
+    background: linear-gradient(135deg, #FFF0F5 0%, #FCE4EC 100%);
+    width: 60px;
+    height: 60px;
+    border-radius: 16px; /* Slightly squircle shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* Prevents icon from squishing */
+    transition: transform 0.3s ease;
+}
+
+/* Icon scales up slightly on hover */
+.visual-block:hover .icon-container {
+    transform: scale(1.05);
+}
+
+/* Text Content next to the icon */
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.visual-block h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--primary-pink);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.primary-text {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 2px;
+}
+
+.secondary-text {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 900px) {
+    .about-card {
+        padding: 30px 20px;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr; /* Stack vertically on mobile */
+        gap: 20px;
+    }
+
+    .about-header {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* --- Skills Section --- */
+.skills-section {
+    margin-bottom: 80px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.skill-pill {
+    background-color: transparent;
+    color: var(--primary-pink);
+    border: 1px solid var(--accent-pink);
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skill-pill:hover {
+    background-color: var(--primary-pink);
+    color: #FFFFFF;
+    border-color: var(--primary-pink);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(216, 27, 96, 0.2);
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid rgba(216, 27, 96, 0.1);
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.footer strong {
+    color: var(--primary-pink);
+    font-weight: 600;
+}
+
+.heart {
+    color: var(--primary-pink);
+    font-size: 1.1rem;
+    margin: 0 4px;
+}
+
+/* --- Responsive Design (Mobile) --- */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 20px;
+    }
+    
+    .nav-links {
+        display: none; /* Hide nav links on small screens for simplicity */
+    }
+
+    .main-container {
+        padding: 20px 20px 60px 20px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+
+    .cta-group {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .full-name {
+        font-size: 3rem;
+    }
+
+    .about-card {
+        padding: 30px 20px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .title-underline {
+        margin: 0 auto 40px auto;
+    }
+
+    .skills-container {
+        justify-content: center;
+    }
+}
