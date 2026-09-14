@@ -3,16 +3,17 @@
 
 /* --- Theme Variables --- */
 :root {
-    --bg-color: #FFF5F7;         /* Very light pink background */
-    --card-bg: #FFFFFF;          /* Pure white for cards */
+    --bg-color: #FFFFFF;         /* Pure white background */
+    --card-bg: #FDF6F7;          /* Soft blush pink for the "About" card */
+    --white: #FFFFFF;
     
     --primary-pink: #D81B60;     /* Vibrant pink for headings/buttons */
-    --accent-pink: #F48FB1;      /* Soft pink for borders/hover */
-    --glow-pink: rgba(216, 27, 96, 0.15); /* Glow effect for photo */
+    --accent-pink: #F48FB1;      /* Soft pink for borders */
+    --glow-pink: rgba(216, 27, 96, 0.15); 
     
-    --text-dark: #2C2C2C;        /* Dark grey for strong contrast */
-    --text-body: #5A5A5A;        /* Softer grey for paragraphs */
-    --text-muted: #8A8A8A;       /* Muted grey for labels */
+    --text-dark: #2C2C2C;        
+    --text-body: #5A5A5A;        
+    --text-muted: #8A8A8A;       
     
     --font-primary: 'Poppins', sans-serif;
 }
@@ -29,7 +30,7 @@ html {
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--bg-color); /* Pure white page */
     font-family: var(--font-primary);
     color: var(--text-body);
     line-height: 1.7;
@@ -72,7 +73,6 @@ body {
     color: var(--primary-pink);
 }
 
-/* Active tab underline effect */
 .nav-links a.active {
     position: relative;
 }
@@ -103,7 +103,6 @@ body {
     margin-bottom: 100px;
 }
 
-/* Image Area */
 .hero-image-wrapper {
     display: flex;
     flex-direction: column;
@@ -132,7 +131,7 @@ body {
 }
 
 .availability-badge {
-    background-color: #FFFFFF;
+    background-color: var(--bg-color);
     color: var(--primary-pink);
     padding: 8px 20px;
     border-radius: 50px;
@@ -145,13 +144,12 @@ body {
     gap: 8px;
 }
 
-/* Text Area */
 .hero-text {
     flex: 1;
 }
 
 .greeting {
-    font-family: 'Georgia', serif; /* Using a serif font for the greeting as in the image */
+    font-family: 'Georgia', serif; 
     font-style: italic;
     color: var(--primary-pink);
     font-size: 1.2rem;
@@ -229,12 +227,8 @@ body {
 
 .btn-secondary:hover {
     border-color: var(--primary-pink);
-    background-color: rgba(216, 27, 96, 0.05);
+    background-color: #FFF0F5;
     transform: translateY(-2px);
-}
-
-.btn-icon {
-    font-size: 1.1rem;
 }
 
 .arrow {
@@ -246,16 +240,17 @@ body {
     transform: translateX(4px);
 }
 
-/* --- "A little about me" Section (Visual Block Version) --- */
+/* --- "A little about me" Section --- */
 .about-card-section {
     margin-bottom: 80px;
 }
 
+/* The card is now a soft blush pink against the white background */
 .about-card {
-    background-color: var(--card-bg);
+    background-color: var(--card-bg); 
     border-radius: 24px;
     padding: 50px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 10px 30px rgba(216, 27, 96, 0.04); 
 }
 
 .about-header {
@@ -277,62 +272,58 @@ body {
     border-radius: 2px;
 }
 
-/* The new visual grid */
 .about-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 20px;
 }
 
-/* Individual Visual Blocks */
 .visual-block {
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 15px;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
     border-radius: 16px;
+    background-color: transparent;
     transition: all 0.3s ease;
-    border: 1px solid transparent; /* Keeps layout stable on hover */
+    border: 1px solid transparent;
 }
 
-/* Hover Effect for the whole block */
 .visual-block:hover {
-    background-color: #FCFAFA;
-    border-color: #F0E6E8;
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(216, 27, 96, 0.06);
+    background-color: var(--white); /* Popping to white on hover */
+    border-color: rgba(216, 27, 96, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(216, 27, 96, 0.05);
 }
 
-/* Large Icon Container with Soft Pink Background */
 .icon-container {
-    background: linear-gradient(135deg, #FFF0F5 0%, #FCE4EC 100%);
-    width: 60px;
-    height: 60px;
-    border-radius: 16px; /* Slightly squircle shape */
+    background-color: var(--white); /* White icons on pink card */
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0; /* Prevents icon from squishing */
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(216, 27, 96, 0.08);
     transition: transform 0.3s ease;
 }
 
-/* Icon scales up slightly on hover */
 .visual-block:hover .icon-container {
     transform: scale(1.05);
 }
 
-/* Text Content next to the icon */
 .card-content {
     display: flex;
     flex-direction: column;
 }
 
 .visual-block h3 {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: var(--primary-pink);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-weight: 700;
 }
 
@@ -340,34 +331,15 @@ body {
     font-size: 0.95rem;
     color: var(--text-dark);
     font-weight: 600;
-    line-height: 1.4;
+    line-height: 1.3;
     margin-bottom: 2px;
 }
 
 .secondary-text {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
     font-weight: 400;
-    line-height: 1.5;
-}
-
-/* --- Responsive adjustments --- */
-@media (max-width: 900px) {
-    .about-card {
-        padding: 30px 20px;
-    }
-    
-    .about-grid {
-        grid-template-columns: 1fr; /* Stack vertically on mobile */
-        gap: 20px;
-    }
-
-    .about-header {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    line-height: 1.4;
 }
 
 /* --- Skills Section --- */
@@ -382,8 +354,9 @@ body {
     margin-top: 30px;
 }
 
+/* Skill pills now use a white background with pink borders */
 .skill-pill {
-    background-color: transparent;
+    background-color: var(--white); 
     color: var(--primary-pink);
     border: 1px solid var(--accent-pink);
     padding: 10px 24px;
@@ -391,6 +364,7 @@ body {
     font-size: 0.9rem;
     font-weight: 500;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(216, 27, 96, 0.03);
 }
 
 .skill-pill:hover {
@@ -431,7 +405,7 @@ body {
     }
     
     .nav-links {
-        display: none; /* Hide nav links on small screens for simplicity */
+        display: none; 
     }
 
     .main-container {
@@ -460,14 +434,20 @@ body {
 
     .about-grid {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 10px;
+    }
+
+    .about-header {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .title-underline {
-        margin: 0 auto 40px auto;
+        margin: 0 auto 30px auto;
     }
-
+    
     .skills-container {
         justify-content: center;
     }
