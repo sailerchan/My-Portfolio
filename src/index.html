@@ -25,7 +25,7 @@
         <section class="hero-section">
             <div class="hero-image-wrapper">
                 <div class="photo-glow">
-                    <img src="images/profile.jpg" alt="Cyril A. Ranoco" class="profile-photo">
+                    <img src="../images/profile.jpg" alt="Cyril A. Ranoco" class="profile-photo">
                 </div>
                 <div class="availability-badge">
                     <span class="sparkle">✨</span> Open to opportunities
@@ -96,7 +96,7 @@
             </div>
         </section>
 
-        <!-- ACTIVITY 3: Show Your Skills (Reusable Skill Cards) -->
+        <!-- Skills Section -->
         <section id="skills" class="skills-section">
             <div class="section-header">
                 <h2 class="section-title">Skills & Tools</h2>
@@ -105,7 +105,6 @@
 
             <div class="skills-grid">
                 
-                <!-- Skill Card 1 -->
                 <div class="skill-card">
                     <div class="skill-icon">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D81B60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
@@ -115,7 +114,6 @@
                     <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
                 </div>
 
-                <!-- Skill Card 2 -->
                 <div class="skill-card">
                     <div class="skill-icon">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D81B60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 12.5v.01"/><path d="M12 16v.01"/><path d="M11 7v.01"/></svg>
@@ -125,7 +123,6 @@
                     <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
                 </div>
 
-                <!-- Skill Card 3 -->
                 <div class="skill-card">
                     <div class="skill-icon">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D81B60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
@@ -135,7 +132,6 @@
                     <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
                 </div>
 
-                <!-- Skill Card 4 -->
                 <div class="skill-card">
                     <div class="skill-icon">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D81B60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
@@ -145,7 +141,6 @@
                     <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
                 </div>
 
-                <!-- Skill Card 5 -->
                 <div class="skill-card">
                     <div class="skill-icon">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D81B60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
@@ -155,7 +150,6 @@
                     <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
                 </div>
 
-                <!-- Skill Card 6 -->
                 <div class="skill-card">
                     <div class="skill-icon">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D81B60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16"/><path d="M9 20V9"/></svg>
@@ -168,7 +162,7 @@
             </div>
         </section>
 
-                     <!-- Featured Projects Section -->
+        <!-- Featured Projects Section -->
         <section id="projects" class="projects-section">
             <div class="section-header">
                 <h2 class="section-title">Featured Projects</h2>
@@ -178,15 +172,27 @@
             <div class="projects-index-grid">
 
                 <!-- Project 1: BCWD Portal -->
-                <div class="project-index-item" onclick="openModal()">
+                <div class="project-index-item" onclick="openModal('bcwdModal')">
                     <div class="project-index-image">
-                        <img src="images/bcwd-homepage.webp" alt="BCWD Online Portal Homepage">
+                        <img src="../images/bcwd-homepage.webp" alt="BCWD Online Portal Homepage">
                     </div>
                     <div class="project-index-meta">
-                        <span class="project-index-number">01 / 01</span>
-                        <span class="project-index-category">Web Development — 2026</span>
+                        <span class="project-index-number">01 / 02</span>
+                        <span class="project-index-category">Web Development</span>
                     </div>
                     <h3 class="project-index-title">BCWD Website Redesign</h3>
+                </div>
+
+                <!-- Project 2: Graphic Design Collection -->
+                <div class="project-index-item" onclick="openModal('graphicModal')">
+                    <div class="project-index-image">
+                        <img src="../images/blush.png" alt="Graphic Design Collection Cover">
+                    </div>
+                    <div class="project-index-meta">
+                        <span class="project-index-number">02 / 02</span>
+                        <span class="project-index-category">Graphic Design</span>
+                    </div>
+                    <h3 class="project-index-title">Graphic Design Collection</h3>
                 </div>
 
             </div>
@@ -194,63 +200,132 @@
 
     </main>
 
-        <!-- PROJECT MODAL (Pop-up Gallery for BCWD) -->
-    <div id="projectModal" class="modal-overlay">
+    <!-- =============================================
+         MODAL 1: BCWD PROJECT
+         ============================================= -->
+    <div id="bcwdModal" class="modal-overlay">
         <div class="modal-content">
-            <button class="close-modal" onclick="closeModal()">&times;</button>
+            <button class="close-modal" onclick="closeModal('bcwdModal')">&times;</button>
             
             <div class="modal-header">
                 <h2>BCWD Online Portal</h2>
                 <p>A comprehensive digital platform for the Butuan City Water District.</p>
             </div>
 
-            <!-- 3-Column Asymmetrical Gallery Grid (6 images) -->
             <div class="modal-gallery">
-                
-                <!-- 1. Login Page -->
                 <div class="gallery-item">
-                    <img src="images/bcwd-login.webp" alt="BCWD Login Page" onclick="openLightbox(this.src)">
+                    <img src="../images/bcwd-login.webp" alt="BCWD Login Page" onclick="openLightbox(this.src)">
                     <p class="gallery-caption">Secure Login Gateway</p>
                 </div>
-
-                <!-- 2. Homepage -->
                 <div class="gallery-item">
-                    <img src="images/bcwd-homepage.webp" alt="BCWD Homepage" onclick="openLightbox(this.src)">
+                    <img src="../images/bcwd-homepage.webp" alt="BCWD Homepage" onclick="openLightbox(this.src)">
                     <p class="gallery-caption">Homepage &amp; Live Alerts</p>
                 </div>
-
-                <!-- 3. News Portal -->
                 <div class="gallery-item">
-                    <img src="images/bcwd-news.webp" alt="BCWD News Portal" onclick="openLightbox(this.src)">
+                    <img src="../images/bcwd-news.webp" alt="BCWD News Portal" onclick="openLightbox(this.src)">
                     <p class="gallery-caption">News &amp; Press Releases</p>
                 </div>
-
-                <!-- 4. Announcement -->
                 <div class="gallery-item">
-                    <img src="images/bcwd-announcement.webp" alt="BCWD Announcement Page" onclick="openLightbox(this.src)">
+                    <img src="../images/bcwd-announcement.webp" alt="BCWD Announcement Page" onclick="openLightbox(this.src)">
                     <p class="gallery-caption">Service Advisories</p>
                 </div>
-
-                <!-- 5. History -->
                 <div class="gallery-item">
-                    <img src="images/bcwd-history.webp" alt="BCWD History Page" onclick="openLightbox(this.src)">
+                    <img src="../images/bcwd-history.webp" alt="BCWD History Page" onclick="openLightbox(this.src)">
                     <p class="gallery-caption">Our History</p>
                 </div>
-
-                <!-- 6. Registration -->
                 <div class="gallery-item">
-                    <img src="images/bcwd-registration.webp" alt="BCWD Registration Page" onclick="openLightbox(this.src)">
+                    <img src="../images/bcwd-registration.webp" alt="BCWD Registration Page" onclick="openLightbox(this.src)">
                     <p class="gallery-caption">E-Bill Registration</p>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="project-tags">
+                    <span>FIGMA</span>
+                    <span>UI/UX</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============================================
+         MODAL 2: GRAPHIC DESIGN COLLECTION (9 images)
+         ============================================= -->
+    <div id="graphicModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('graphicModal')">&times;</button>
+            
+            <div class="modal-header">
+                <h2>Graphic Design Collection</h2>
+                <p>A curated set of visual designs exploring beauty, cosmetics, and modern product aesthetics.</p>
+            </div>
+
+            <div class="modal-gallery">
+                
+                <!-- 1. Blush -->
+                <div class="gallery-item">
+                    <img src="../images/blush.png" alt="Blush Design" onclick="openLightbox(this.src)">
+                    <p class="gallery-caption">Blush — Brand Identity</p>
+                </div>
+
+                <!-- 2. Eyeshadow -->
+                <div class="gallery-item">
+                    <img src="../images/eyeshadow.png" alt="Eyeshadow Design" onclick="openLightbox(this.src)">
+                    <p class="gallery-caption">Eyeshadow — Cosmetic Poster</p>
+                </div>
+
+                <!-- 3. Rhode -->
+                <div class="gallery-item">
+                    <img src="../images/rhode.png" alt="Rhode Design" onclick="openLightbox(this.src)">
+                    <p class="gallery-caption">Rhode — Product Visual</p>
+                </div>
+
+                <!-- 4. Frappuccino Poster (c2) -->
+                <div class="gallery-item">
+                    <img src="../images/c2.jpg" alt="Frappuccino Poster" onclick="openLightbox(this.src)">
+                    <p class="gallery-caption">Frappuccino — Beverage Poster</p>
+                </div>
+
+                <!-- 5. Beverage Cover (c1) -->
+                <div class="gallery-item">
+                    <img src="../images/c1.jpg" alt="Beverage Cover Design" onclick="openLightbox(this.src)">
+                    <p class="gallery-caption">Iced Coffee — Cover Design</p>
+                </div>
+
+                <!-- 6. Dark Chocolate (f2) -->
+                <div class="gallery-item">
+                    <img src="../images/f2.jpg" alt="Dark Chocolate Poster" onclick="openLightbox(this.src)">
+                    <p class="gallery-caption">Dark Chocolate — Product Poster</p>
+                </div>
+
+                <!-- 7. Burger Poster (f1) -->
+                <div class="gallery-item">
+                    <img src="../images/f1.jpg" alt="Burger Poster" onclick="openLightbox(this.src)">
+                    <p class="gallery-caption">Burger — Food Poster</p>
+                </div>
+
+                <!-- 8. Skincare Editorial (design2) -->
+                <div class="gallery-item">
+                    <img src="../images/design2.jpg" alt="Skincare Editorial Design" onclick="openLightbox(this.src)">
+                    <p class="gallery-caption">Skincare — Editorial Layout</p>
+                </div>
+
+                <!-- 9. Beauty Brand Layout (design1) -->
+                <div class="gallery-item">
+                    <img src="../images/design1.jpg" alt="Beauty Brand Layout" onclick="openLightbox(this.src)">
+                    <p class="gallery-caption">Beauty — Brand Layout</p>
                 </div>
 
             </div>
 
             <div class="modal-footer">
                 <div class="project-tags">
-                    <span>HTML/CSS</span>
-                    <span>JavaScript</span>
-                    <span>UI/UX</span>
-               
+                    <span>PHOTOSHOP</span>
+                    <span>BRANDING</span>
+                    <span>POSTER</span>
+                    <span>EDITORIAL</span>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -260,16 +335,19 @@
     </div>
 
     <script>
-        function openModal() {
-            document.getElementById('projectModal').style.display = 'flex';
+        // Open a specific modal by ID
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
             document.body.style.overflow = 'hidden';
         }
 
-        function closeModal() {
-            document.getElementById('projectModal').style.display = 'none';
+        // Close a specific modal by ID
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
             document.body.style.overflow = 'auto';
         }
 
+        // Lightbox for zooming images
         function openLightbox(src) {
             event.stopPropagation();
             document.getElementById('lightbox-img').src = src;
@@ -279,6 +357,16 @@
         function closeLightbox() {
             document.getElementById('lightbox').style.display = 'none';
         }
+
+        // Close modal when clicking the dark backdrop
+        document.querySelectorAll('.modal-overlay').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
     </script>
 
 </body>
