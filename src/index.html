@@ -21,7 +21,7 @@
 
     <main class="main-container">
         
-        <!-- Hero / Intro Section -->
+        <!-- Hero Section -->
         <section class="hero-section">
             <div class="hero-image-wrapper">
                 <div class="photo-glow">
@@ -38,7 +38,7 @@
                 <p class="tagline">"Turning coffee into code & bugs into features."</p>
                 
                 <p class="bio">
-                    A passionate 4th year <strong>Information Technology</strong> student at 
+                    A passionate 4th year <strong>Information System</strong> student at 
                     <strong>Caraga State University</strong>, Butuan City. I love crafting 
                     clean web experiences, exploring new tech, and turning ideas into 
                     something real — one commit at a time.
@@ -51,47 +51,75 @@
             </div>
         </section>
 
-        <!-- "A little about me" Section -->
-        <section class="about-card-section">
-            <div class="about-card">
-                <div class="about-header">
-                    <h2 class="section-title">A little about me</h2>
-                    <div class="title-underline"></div>
+        <!-- "A little about me" Section — Professional -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+
+                <!-- Left: Photo card -->
+                <div class="about-photo-col">
+                    <div class="about-photo-card">
+                        <img src="../images/me.jpeg" alt="Cyril A. Ranoco" class="about-photo-img">
+                    </div>
+                    <div class="about-photo-tag">
+                        <span class="tag-dot"></span>
+                        <span>Butuan City, PH</span>
+                    </div>
                 </div>
-                
-                <div class="about-grid">
-                    <div class="visual-block">
-                        <div class="icon-container">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D81B60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+
+                <!-- Right: Content -->
+                <div class="about-content-col">
+
+                    <p class="about-eyebrow">About</p>
+
+                    <h2 class="about-heading">
+                        A little about me
+                    </h2>
+
+                    <p class="about-para">
+                        I'm Cyril a 21 years old 4th year Information System 
+                        student at Caraga State University. I enjoy building clean 
+                        web experiences, exploring design systems, and turning 
+                        ideas into something real.
+                    </p>
+
+                    <p class="about-para">
+                        Most of what you'll find here comes from my projects, 
+                        ideas, and creative work — with design, web development, 
+                        and photography being a constant part of that journey.
+                    </p>
+
+                    <!-- Stats row -->
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">4th</span>
+                            <span class="stat-label">Year Level</span>
                         </div>
-                        <div class="card-content">
-                            <h3>EDUCATION</h3>
-                            <p class="primary-text">BS Information Technology</p>
-                            <p class="secondary-text">Caraga State University, 4th Year</p>
+                        <div class="stat-item">
+                            <span class="stat-value">BSIS</span>
+                            <span class="stat-label">Program</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">2026</span>
+                            <span class="stat-label">Graduating</span>
                         </div>
                     </div>
 
-                    <div class="visual-block">
-                        <div class="icon-container">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D81B60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                        </div>
-                        <div class="card-content">
-                            <h3>INTERESTS</h3>
-                            <p class="primary-text">Web Development</p>
-                            <p class="secondary-text">UI/UX · Software Engineering</p>
+                    <!-- Quote -->
+                    <div class="about-quote">
+                        <span class="quote-mark">"</span>
+                        <p>Designing with care, coding with curiosity.</p>
+                    </div>
+
+                    <!-- Currently strip -->
+                    <div class="about-now">
+                        <span class="now-label">Currently</span>
+                        <div class="now-pills">
+                            <span class="now-pill">☕ Drinking iced latte</span>
+                            <span class="now-pill">📚 Learning React</span>
+                            <span class="now-pill">🎨 Exploring Figma</span>
                         </div>
                     </div>
 
-                    <div class="visual-block">
-                        <div class="icon-container">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D81B60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        </div>
-                        <div class="card-content">
-                            <h3>LOCATION</h3>
-                            <p class="primary-text">Butuan City, Caraga</p>
-                            <p class="secondary-text">Philippines</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -198,11 +226,90 @@
             </div>
         </section>
 
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+
+            <div class="section-header contact-header">
+                <p class="contact-eyebrow">Contact</p>
+                <h2 class="section-title contact-title">Let's work together ✨</h2>
+                <div class="title-underline"></div>
+                <p class="contact-intro">
+                    Have a project in mind, want to collaborate, or just want to say hi? 
+                    I'd love to hear from you.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- Email (with copy button) -->
+                <div class="contact-card" data-reveal>
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div class="contact-card-body">
+                        <p class="contact-label">Email</p>
+                        <p class="contact-value">cyrilranoco@gmail.com</p>
+                    </div>
+                    <div class="contact-actions">
+                        <button class="contact-action-btn" onclick="copyEmail('cyrilranoco@gmail.com')" title="Copy email">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                        </button>
+                        <a href="mailto:cyrilranoco@gmail.com" class="contact-action-btn" title="Send email">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/cyril.a.ranoco" target="_blank" class="contact-card" data-reveal>
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </div>
+                    <div class="contact-card-body">
+                        <p class="contact-label">Facebook</p>
+                        <p class="contact-value">cyril.a.ranoco</p>
+                    </div>
+                    <div class="contact-actions">
+                        <span class="contact-action-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Location -->
+                <div class="contact-card" data-reveal>
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div class="contact-card-body">
+                        <p class="contact-label">Location</p>
+                        <p class="contact-value">Butuan City, PH</p>
+                    </div>
+                    <div class="contact-actions">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Available</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Social Links Row -->
+            <div class="social-links" data-reveal>
+                <a href="mailto:cyrilranoco@gmail.com" class="social-btn" aria-label="Gmail">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <span>Gmail</span>
+                </a>
+                <a href="https://www.facebook.com/cyril.a.ranoco" target="_blank" class="social-btn" aria-label="Facebook">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    <span>Facebook</span>
+                </a>
+            </div>
+
+        </section>
+
     </main>
 
-    <!-- =============================================
-         MODAL 1: BCWD PROJECT
-         ============================================= -->
+    <!-- MODAL 1: BCWD PROJECT -->
     <div id="bcwdModal" class="modal-overlay">
         <div class="modal-content">
             <button class="close-modal" onclick="closeModal('bcwdModal')">&times;</button>
@@ -248,9 +355,7 @@
         </div>
     </div>
 
-    <!-- =============================================
-         MODAL 2: GRAPHIC DESIGN COLLECTION (9 images)
-         ============================================= -->
+    <!-- MODAL 2: GRAPHIC DESIGN COLLECTION (9 images) -->
     <div id="graphicModal" class="modal-overlay">
         <div class="modal-content">
             <button class="close-modal" onclick="closeModal('graphicModal')">&times;</button>
@@ -262,55 +367,46 @@
 
             <div class="modal-gallery">
                 
-                <!-- 1. Blush -->
                 <div class="gallery-item">
                     <img src="../images/blush.png" alt="Blush Design" onclick="openLightbox(this.src)">
                     <p class="gallery-caption">Blush — Brand Identity</p>
                 </div>
 
-                <!-- 2. Eyeshadow -->
                 <div class="gallery-item">
                     <img src="../images/eyeshadow.png" alt="Eyeshadow Design" onclick="openLightbox(this.src)">
                     <p class="gallery-caption">Eyeshadow — Cosmetic Poster</p>
                 </div>
 
-                <!-- 3. Rhode -->
                 <div class="gallery-item">
                     <img src="../images/rhode.png" alt="Rhode Design" onclick="openLightbox(this.src)">
                     <p class="gallery-caption">Rhode — Product Visual</p>
                 </div>
 
-                <!-- 4. Frappuccino Poster (c2) -->
                 <div class="gallery-item">
                     <img src="../images/c2.jpg" alt="Frappuccino Poster" onclick="openLightbox(this.src)">
                     <p class="gallery-caption">Frappuccino — Beverage Poster</p>
                 </div>
 
-                <!-- 5. Beverage Cover (c1) -->
                 <div class="gallery-item">
                     <img src="../images/c1.jpg" alt="Beverage Cover Design" onclick="openLightbox(this.src)">
                     <p class="gallery-caption">Iced Coffee — Cover Design</p>
                 </div>
 
-                <!-- 6. Dark Chocolate (f2) -->
                 <div class="gallery-item">
                     <img src="../images/f2.jpg" alt="Dark Chocolate Poster" onclick="openLightbox(this.src)">
                     <p class="gallery-caption">Dark Chocolate — Product Poster</p>
                 </div>
 
-                <!-- 7. Burger Poster (f1) -->
                 <div class="gallery-item">
                     <img src="../images/f1.jpg" alt="Burger Poster" onclick="openLightbox(this.src)">
                     <p class="gallery-caption">Burger — Food Poster</p>
                 </div>
 
-                <!-- 8. Skincare Editorial (design2) -->
                 <div class="gallery-item">
                     <img src="../images/design2.jpg" alt="Skincare Editorial Design" onclick="openLightbox(this.src)">
                     <p class="gallery-caption">Skincare — Editorial Layout</p>
                 </div>
 
-                <!-- 9. Beauty Brand Layout (design1) -->
                 <div class="gallery-item">
                     <img src="../images/design1.jpg" alt="Beauty Brand Layout" onclick="openLightbox(this.src)">
                     <p class="gallery-caption">Beauty — Brand Layout</p>
@@ -334,40 +430,14 @@
         <img id="lightbox-img" src="" alt="Zoomed Image">
     </div>
 
-    <script>
-        // Open a specific modal by ID
-        function openModal(modalId) {
-            document.getElementById(modalId).style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Designed & built with <span class="heart">♥</span> by <strong>Cyril A. Ranoco</strong></p>
+        <p>© 2026 · All rights reserved</p>
+    </footer>
 
-        // Close a specific modal by ID
-        function closeModal(modalId) {
-            document.getElementById(modalId).style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        // Lightbox for zooming images
-        function openLightbox(src) {
-            event.stopPropagation();
-            document.getElementById('lightbox-img').src = src;
-            document.getElementById('lightbox').style.display = 'flex';
-        }
-
-        function closeLightbox() {
-            document.getElementById('lightbox').style.display = 'none';
-        }
-
-        // Close modal when clicking the dark backdrop
-        document.querySelectorAll('.modal-overlay').forEach(modal => {
-            modal.addEventListener('click', function(e) {
-                if (e.target === this) {
-                    this.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
-            });
-        });
-    </script>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
 
 </body>
 </html>
