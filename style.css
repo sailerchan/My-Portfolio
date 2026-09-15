@@ -452,3 +452,145 @@ body {
         justify-content: center;
     }
 }
+
+/* --- ACTIVITY 2: Tell Your Story Section (Aligned Design) --- */
+.story-section {
+    margin-bottom: 80px;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* Base Story Card Style - Matches your existing visual-block hover */
+.story-card {
+    background-color: var(--card-bg); /* Your exact soft blush pink */
+    border-radius: 24px; 
+    padding: 30px; /* Reduced to match the tightness of the 'about' section */
+    box-shadow: 0 10px 30px rgba(216, 27, 96, 0.04); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    display: flex; /* CRITICAL: This makes the icon and text align side-by-side */
+    align-items: flex-start; /* CRITICAL: This aligns them to the top */
+    gap: 16px; /* Matches the gap in your 'about' section */
+}
+
+.story-card:hover {
+    transform: translateY(-3px);
+    background-color: var(--white); /* Pops to white on hover, just like your about cards */
+    box-shadow: 0 15px 35px rgba(216, 27, 96, 0.06);
+}
+
+/* Full-width academic card */
+.academic-card {
+    grid-column: 1 / -1; 
+    background-color: var(--white);
+    border: 1px solid #F0E6E8;
+}
+
+.academic-card:hover {
+    background-color: var(--card-bg); /* Reverses the hover for this one */
+    border-color: var(--accent-pink);
+}
+
+/* Icon Container - Reused from your 'about' section */
+.story-card .icon-container {
+    background-color: var(--white); 
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(216, 27, 96, 0.08);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.story-card:hover .icon-container {
+    transform: scale(1.05);
+    background-color: #FFF0F5; /* Soft pink on hover */
+}
+
+.academic-card .icon-container {
+    background-color: var(--card-bg); /* Pink icon container on the white card */
+}
+
+.academic-card:hover .icon-container {
+    background-color: var(--white);
+}
+
+/* Content Wrapper - Aligns text perfectly */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Headings - Matches your uppercase style */
+.story-card h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--primary-pink);
+    margin-bottom: 15px;
+    font-weight: 700;
+    margin-top: 5px; /* Aligns the text baseline with the icon slightly */
+}
+
+/* Styled Lists - Clean, aligned, with pink bullet points */
+.styled-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.styled-list li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.styled-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    color: var(--primary-pink);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Academic Text */
+.bio-text {
+    font-size: 0.95rem;
+    color: var(--text-body);
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.bio-text strong {
+    color: var(--primary-pink);
+    font-weight: 600;
+}
+
+/* --- Responsive Design for Story Section --- */
+@media (max-width: 900px) {
+    .story-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .academic-card {
+        grid-column: 1; 
+    }
+
+    .story-card {
+        padding: 25px;
+    }
+}
