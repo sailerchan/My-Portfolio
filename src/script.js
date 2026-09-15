@@ -108,3 +108,36 @@ document.addEventListener('DOMContentLoaded', () => {
         revealElements.forEach(el => el.classList.add('is-visible'));
     }
 });
+
+/* =============================================
+   SKILL BARS — animate on scroll into view
+   ============================================= */
+document.addEventListener('DOMContentLoaded', () => {
+    const bars = document.querySelectorAll('.skill-level');
+
+    const fillBar = (bar) => {
+        const level = bar.getAttribute('data-level');
+        if (level) bar.style.width = level + '%';
+    };
+
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    fillBar(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        bars.forEach(bar => observer.observe(bar));
+    } else {
+        // Fallback for old browsers
+        bars.forEach(fillBar);
+    }
+
+    // Safety: force-fill after 2s in case observer fails
+    setTimeout(() => {
+        bars.forEach(fillBar);
+    }, 2000);
+});
