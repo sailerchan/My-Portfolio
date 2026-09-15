@@ -181,8 +181,8 @@ body {
 }
 
 .bio strong {
-    color: var(--primary-pink);
-    font-weight: 600;
+    color: inherit;
+    font-weight: 400;
 }
 
 /* Buttons */
@@ -241,39 +241,14 @@ body {
 }
 
 /* =============================================
-   ABOUT SECTION — Professional / Soft Pink
+   ABOUT SECTION — Professional / Clean
    ============================================= */
 .about-section {
     margin-bottom: 80px;
     padding: 20px 0;
 }
-.about-section::before {
-    content: '';
-    position: absolute;
-    top: -80px;
-    right: -80px;
-    width: 260px;
-    height: 260px;
-    background: radial-gradient(circle, rgba(244, 143, 177, 0.25) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-.about-section::after {
-    content: '';
-    position: absolute;
-    bottom: -80px;
-    left: -60px;
-    width: 220px;
-    height: 220px;
-    background: radial-gradient(circle, rgba(216, 27, 96, 0.10) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-}
 
 .about-container {
-    position: relative;
-    z-index: 1;
     display: grid;
     grid-template-columns: 380px 1fr;
     gap: 70px;
@@ -397,7 +372,6 @@ body {
     max-width: 580px;
 }
 
-/* If <strong> tags exist, they'll look normal now */
 .about-para strong {
     font-weight: 400;
     color: inherit;
@@ -733,9 +707,27 @@ body {
     color: var(--primary-pink);
     font-weight: 600;
 }
-/* --- Featured Projects Section --- */
+
+/* =============================================
+   FEATURED PROJECTS SECTION
+   ============================================= */
 .projects-section {
     margin-bottom: 80px;
+}
+
+.projects-section .section-title {
+    font-size: 2rem;
+    color: var(--primary-pink) !important;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.projects-section .title-underline {
+    width: 50px;
+    height: 4px;
+    background-color: var(--primary-pink);
+    border-radius: 2px;
 }
 
 .projects-index-grid {
@@ -762,7 +754,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;   /* ← centered */
+    object-position: center;
     transition: transform 0.5s ease;
 }
 
@@ -847,6 +839,7 @@ body {
 
 .contact-title {
     font-size: 2.6rem;
+    color: var(--primary-pink) !important;
     letter-spacing: -1px;
     margin-bottom: 14px;
 }
@@ -1211,7 +1204,7 @@ body {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
     border-radius: 16px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06); 
     transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -1316,9 +1309,8 @@ body {
 
     /* About section — stack on mobile */
     .about-section {
-        margin-bottom: 80px;
-        padding: 40px 24px;
-        border-radius: 24px;
+        margin-bottom: 60px;
+        padding: 0;
     }
 
     .about-container {
@@ -1373,6 +1365,10 @@ body {
         gap: 20px;
     }
 
+    .skills-heading {
+        font-size: 2rem;
+    }
+
     .projects-index-grid {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -1380,6 +1376,10 @@ body {
 
     .project-index-image {
         aspect-ratio: 16 / 10;
+    }
+
+    .projects-section .section-title {
+        font-size: 1.8rem;
     }
 
     .contact-title {

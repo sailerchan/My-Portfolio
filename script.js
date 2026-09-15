@@ -141,3 +141,12 @@ document.addEventListener('DOMContentLoaded', () => {
         bars.forEach(fillBar);
     }, 2000);
 });
+// Navbar glass appears on scroll
+const navbar = document.querySelector('.navbar');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
