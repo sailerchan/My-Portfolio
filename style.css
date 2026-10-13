@@ -1141,25 +1141,64 @@ section[id] {
         scroll-margin-top: 120px;
     }
 
-    /* Navigation: stack logo above wrapped links (never hidden) */
-    .navbar {
-        flex-direction: column;
-        gap: 8px;
-        padding: 12px 20px;
-    }
+   /* =============================================
+   NAVIGATION BAR (sticky) — Matte Finish
+   ============================================= */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px max(60px, calc((100vw - 1100px) / 2 + 60px));
+    background-color: #FDF6F7;
+    border-bottom: 1px solid var(--border-soft);
+}
 
-    .nav-links {
-        justify-content: center;
-        gap: 4px 20px;
-    }
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-pink);
+    letter-spacing: -0.5px;
+    text-decoration: none;
+}
 
-    .nav-links a {
-        font-size: 0.88rem;
-    }
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 32px;
+}
 
-    .main-container {
-        padding: 20px 20px 60px 20px;
-    }
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 4px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-pink);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-pink);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
 
     /* Hero */
     .hero-section {
