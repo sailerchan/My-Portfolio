@@ -8,21 +8,23 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar (Activity 6) -->
     <nav class="navbar">
-        <div class="logo">cai.dev</div>
+        <a href="#home" class="logo">cai.dev</a>
         <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <main class="main-container">
-        
+
         <!-- Hero Section -->
-        <section class="hero-section">
+        <section id="home" class="hero-section">
             <div class="hero-image-wrapper">
                 <div class="photo-glow">
                     <img src="images/profile.jpg" alt="Cyril A. Ranoco" class="profile-photo">
@@ -36,11 +38,12 @@
                 <p class="greeting">Hello, I'm</p>
                 <h1 class="full-name">Cyril A. Ranoco</h1>
                 <p class="tagline">"Made with curiosity, shaped with intent."</p>
-                        
+
                 <div class="cta-group">
                     <a href="#about" class="btn btn-primary">Learn more <span class="btn-icon">✉</span></a>
                     <a href="#projects" class="btn btn-secondary">View projects <span class="arrow">→</span></a>
                 </div>
+            </div>
         </section>
 
         <!-- About Section -->
@@ -58,12 +61,8 @@
                 </div>
 
                 <div class="about-content-col">
-
                     <p class="about-eyebrow">About</p>
-
-                    <h2 class="about-heading">
-                        A little about me
-                    </h2>
+                    <h2 class="about-heading">A little about me</h2>
 
                     <p class="about-para">
                         I'm Cyril, a 21-year-old fourth-year Information Systems
@@ -104,7 +103,6 @@
                             <span class="now-pill">🎨 Exploring Figma</span>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -217,113 +215,96 @@
         </section>
 
         <!-- Featured Projects Section -->
-        <section id="projects" class="projects-section">
+<section id="projects" class="projects-section">
+    <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+    </div>
+
+    <div class="project-cards">
+
+        <article class="project-card">
+            <img src="images/bcwd-login.webp" alt="BCWD login page" class="project-card-img">
+            <div class="project-card-body">
+                <h3 class="project-card-title">BCWD Online Portal</h3>
+                <p class="project-card-desc">
+                    A UI/UX design for the Butuan City Water District portal, covering login,
+                    news, service advisories, and e-bill registration.
+                </p>
+                <ul class="project-card-tech">
+                    <li>Figma</li>
+                    <li>UI/UX</li>
+                    <li>Prototyping</li>
+                </ul>
+                <a href="#bcwd-modal" class="btn btn-primary project-card-btn">View Project</a>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <img src="images/blush.png" alt="Blush brand design" class="project-card-img">
+            <div class="project-card-body">
+                <h3 class="project-card-title">Graphic Design Collection</h3>
+                <p class="project-card-desc">
+                    A curated set of visual designs, from cosmetic brand layouts
+                    to food and beverage posters.
+                </p>
+                <ul class="project-card-tech">
+                    <li>Photoshop</li>
+                    <li>Branding</li>
+                    <li>Poster</li>
+                    <li>Editorial</li>
+                </ul>
+                <a href="#design-modal" class="btn btn-primary project-card-btn">View Project</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+        <!-- Education & Experience Section (Activity 5) -->
+        <section id="experience" class="experience-section">
             <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-            </div>
-        </section>
-
-        <!-- Project Gallery 1: BCWD Online Portal -->
-        <section class="gallery-section">
-            <div class="gallery-header">
-                <p class="gallery-eyebrow">Project Gallery</p>
-                <h2 class="gallery-title">BCWD Online Portal</h2>
-                <p class="gallery-subtitle">A comprehensive digital platform for the Butuan City Water District.</p>
+                <p class="experience-eyebrow">Background</p>
+                <h2 class="section-title">Education &amp; Experience</h2>
             </div>
 
-            <div class="gallery-grid">
-                <a href="images/bcwd-login.webp" target="_blank" class="gallery-item">
-                    <img src="images/bcwd-login.webp" alt="BCWD Login Page">
-                    <p class="gallery-caption">Secure Login Gateway</p>
-                </a>
-                <a href="images/bcwd-homepage.webp" target="_blank" class="gallery-item">
-                    <img src="images/bcwd-homepage.webp" alt="BCWD Homepage">
-                    <p class="gallery-caption">Homepage &amp; Live Alerts</p>
-                </a>
-                <a href="images/bcwd-news.webp" target="_blank" class="gallery-item">
-                    <img src="images/bcwd-news.webp" alt="BCWD News Portal">
-                    <p class="gallery-caption">News &amp; Press Releases</p>
-                </a>
-                <a href="images/bcwd-announcement.webp" target="_blank" class="gallery-item">
-                    <img src="images/bcwd-announcement.webp" alt="BCWD Announcement Page">
-                    <p class="gallery-caption">Service Advisories</p>
-                </a>
-                <a href="images/bcwd-history.webp" target="_blank" class="gallery-item">
-                    <img src="images/bcwd-history.webp" alt="BCWD History Page">
-                    <p class="gallery-caption">Our History</p>
-                </a>
-                <a href="images/bcwd-registration.webp" target="_blank" class="gallery-item">
-                    <img src="images/bcwd-registration.webp" alt="BCWD Registration Page">
-                    <p class="gallery-caption">E-Bill Registration</p>
-                </a>
-            </div>
-
-            <div class="gallery-tags">
-                <span>FIGMA</span>
-                <span>UI/UX</span>
-            </div>
-        </section>
-
-        <!-- Project Gallery 2: Graphic Design Collection -->
-        <section class="gallery-section">
-            <div class="gallery-header">
-                <p class="gallery-eyebrow">Project Gallery</p>
-                <h2 class="gallery-title">Graphic Design Collection</h2>
-                <p class="gallery-subtitle">A curated set of visual designs.</p>
-            </div>
-
-            <div class="gallery-grid">
-                <a href="images/blush.png" target="_blank" class="gallery-item">
-                    <img src="images/blush.png" alt="Blush Design">
-                    <p class="gallery-caption">Blush — Brand Identity</p>
-                </a>
-
-                <a href="images/eyeshadow.png" target="_blank" class="gallery-item">
-                    <img src="images/eyeshadow.png" alt="Eyeshadow Design">
-                    <p class="gallery-caption">Eyeshadow — Cosmetic Poster</p>
-                </a>
-
-                <a href="images/rhode.png" target="_blank" class="gallery-item">
-                    <img src="images/rhode.png" alt="Rhode Design">
-                    <p class="gallery-caption">Rhode — Product Visual</p>
-                </a>
-
-                <a href="images/c2.jpg" target="_blank" class="gallery-item">
-                    <img src="images/c2.jpg" alt="Frappuccino Poster">
-                    <p class="gallery-caption">Frappuccino — Beverage Poster</p>
-                </a>
-
-                <a href="images/c1.jpg" target="_blank" class="gallery-item">
-                    <img src="images/c1.jpg" alt="Beverage Cover Design">
-                    <p class="gallery-caption">Iced Coffee — Cover Design</p>
-                </a>
-
-                <a href="images/f2.jpg" target="_blank" class="gallery-item">
-                    <img src="images/f2.jpg" alt="Dark Chocolate Poster">
-                    <p class="gallery-caption">Dark Chocolate — Product Poster</p>
-                </a>
-
-                <a href="images/f1.jpg" target="_blank" class="gallery-item">
-                    <img src="images/f1.jpg" alt="Burger Poster">
-                    <p class="gallery-caption">Burger — Food Poster</p>
-                </a>
-
-                <a href="images/design2.jpg" target="_blank" class="gallery-item">
-                    <img src="images/design2.jpg" alt="Skincare Editorial Design">
-                    <p class="gallery-caption">Skincare — Editorial Layout</p>
-                </a>
-
-                <a href="images/design1.jpg" target="_blank" class="gallery-item">
-                    <img src="images/design1.jpg" alt="Beauty Brand Layout">
-                    <p class="gallery-caption">Beauty — Brand Layout</p>
-                </a>
-            </div>
-
-            <div class="gallery-tags">
-                <span>PHOTOSHOP</span>
-                <span>BRANDING</span>
-                <span>POSTER</span>
-                <span>EDITORIAL</span>
+            <!-- Wrapper lets the table scroll sideways on small screens -->
+            <div class="table-wrapper">
+                <table class="experience-table">
+                    <caption class="visually-hidden">My education, training, and project experience</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Year</th>
+                            <th scope="col">Title / Program</th>
+                            <th scope="col">Institution / Organization</th>
+                            <th scope="col">Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2022 – 2026</td>
+                            <td>BS in Information Systems</td>
+                            <td>Caraga State University</td>
+                            <td><span class="type-badge">Education</span></td>
+                        </tr>
+                        <tr>
+                            <td>[Year]</td>
+                            <td>[Senior High School Strand]</td>
+                            <td>[Your Senior High School]</td>
+                            <td><span class="type-badge">Education</span></td>
+                        </tr>
+                        <tr>
+                            <td>[Year]</td>
+                            <td>UI/UX Design — BCWD Online Portal</td>
+                            <td>Academic Project</td>
+                            <td><span class="type-badge">Experience</span></td>
+                        </tr>
+                        <tr>
+                            <td>[Year]</td>
+                            <td>[Certificate / Training / Achievement]</td>
+                            <td>[Organization]</td>
+                            <td><span class="type-badge">Certification</span></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
@@ -334,7 +315,7 @@
                 <p class="contact-eyebrow">Contact</p>
                 <h2 class="section-title contact-title">Let's work together ✨</h2>
                 <p class="contact-intro">
-                    Have a project in mind, want to collaborate, or just want to say hi? 
+                    Have a project in mind, want to collaborate, or just want to say hi?
                     I'd love to hear from you.
                 </p>
             </div>
@@ -376,6 +357,34 @@
                 </div>
 
             </div>
+
+            <!-- Contact Form (Activity 7) -->
+            <form class="contact-form" action="mailto:cyrilranoco@gmail.com" method="post" enctype="text/plain">
+                <h3 class="form-title">Send me a message</h3>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-btn">Send Message <span class="arrow">→</span></button>
+            </form>
 
         </section>
 
